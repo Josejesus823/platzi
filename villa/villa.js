@@ -14,7 +14,6 @@ var yVaca = 100;
 var xPollo = 300;
 var yPollo = 300;
 
-
 var fondo = {
   url:"tile.png",
   cargaOK: false
@@ -110,7 +109,6 @@ function moverVaca(evento)
   }
 }
 
-
 function moverPollo(evento)
 {
   var movimiento3 = 10;
@@ -175,11 +173,11 @@ function dibujar()
   if(cerdo.cargaOK)
   {
       papel.drawImage(cerdo.imagen, xCerdo, yCerdo);
-    }
+  }
   if(vaca.cargaOK)
   {
-      papel.drawImage(vaca.imagen, xVaca, yVaca);
-    }
+    papel.drawImage(vaca.imagen, xVaca, yVaca);
+  }
 }
 
 function aleatorio(min, maxi)
