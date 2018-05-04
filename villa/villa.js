@@ -161,3 +161,23 @@ function cargarCerdos()
   cerdo.cargaOK = true;
   dibujar();
 }
+
+function dibujar()
+{
+  if(fondo.cargaOK)
+  {
+    papel.drawImage(fondo.imagen, 0, 0);
+  }
+  if(pollo.cargaOK)
+  {
+      papel.drawImage(pollo.imagen, xPollo, yPollo);
+    }
+  if(cerdo.cargaOK)
+  {
+      papel.drawImage(cerdo.imagen, xCerdo, yCerdo);
+    }
+  if(vaca.cargaOK)
+  {
+      papel.drawImage(vaca.imagen, xVaca, yVaca);
+    }
+}
