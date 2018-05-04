@@ -47,3 +47,96 @@ pollo.imagen.addEventListener("load", cargarPollos);
 cerdo.imagen = new Image();
 cerdo.imagen.src = cerdo.url;
 cerdo.imagen.addEventListener("load", cargarCerdos);
+
+function moverCerdo(evento)
+{
+  var movimiento = 10;
+  var teclas = {
+    UP: 38,
+    DOWN: 40,
+    LEFT: 37,
+    RIGHT: 39,
+  };
+  switch (evento.keyCode)
+  {
+    case teclas.UP:
+    yCerdo = yCerdo - movimiento;
+    dibujar(xCerdo, yCerdo);
+    break;
+    case teclas.LEFT:
+    xCerdo = xCerdo - movimiento;
+    dibujar(xCerdo, yCerdo);
+    break;
+    case teclas.DOWN:
+    yCerdo = yCerdo + movimiento;
+    dibujar(xCerdo, yCerdo);
+    break;
+    case teclas.RIGHT:
+    xCerdo = xCerdo + movimiento;
+    dibujar(xCerdo, yCerdo);
+    break;
+
+  }
+}
+
+
+function moverVaca(evento)
+{
+  var movimiento2 = 10;
+  var teclas2 = {
+    UP2: 87,
+    DOWN2: 83,
+    LEFT2: 65,
+    RIGHT2: 68
+  };
+  switch (evento.keyCode)
+  {
+    case teclas2.UP2:
+    yVaca = yVaca - movimiento2;
+    dibujar(xVaca, yVaca);
+    break;
+    case teclas2.LEFT2:
+    xVaca = xVaca - movimiento2;
+    dibujar(xVaca, yVaca);
+    break;
+    case teclas2.DOWN2:
+    yVaca = yVaca + movimiento2;
+    dibujar(xVaca, yVaca);
+    break;
+    case teclas2.RIGHT2:
+    xVaca = xVaca + movimiento2;
+    dibujar(xVaca, yVaca);
+    break;
+  }
+}
+
+
+function moverPollo(evento)
+{
+  var movimiento3 = 10;
+  var teclas3 = {
+   UP3: 73,
+   DOWN3: 75,
+   LEFT3: 74,
+   RIGHT3: 76
+} ;
+  switch (evento.keyCode)
+  {
+    case teclas3.UP3:
+    yPollo = yPollo - movimiento3;
+    dibujar(xPollo, yPollo);
+    break;
+    case teclas3.LEFT3:
+    xPollo = xPollo - movimiento3;
+    dibujar(xPollo, yPollo);
+    break;
+    case teclas3.DOWN3:
+    yPollo = yPollo + movimiento3;
+    dibujar(xPollo, yPollo);
+    break;
+    case teclas3.RIGHT3:
+    xPollo = xPollo + movimiento3;
+    dibujar(xPollo, yPollo);
+    break;
+  }
+}
