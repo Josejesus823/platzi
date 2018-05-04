@@ -140,3 +140,24 @@ function moverPollo(evento)
     break;
   }
 }
+
+function cargarFondo()
+{
+  fondo.cargaOK = true;
+  dibujar();
+}
+function cargarVacas()
+{
+  vaca.cargaOK = true;
+  dibujar();
+}
+function cargarPollos()
+{
+  pollo.cargaOK = true;
+  dibujar();
+}
+function cargarCerdos()
+{
+  cerdo.cargaOK = true;
+  dibujar();
+}
